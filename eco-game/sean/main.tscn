@@ -1,35 +1,139 @@
 [gd_scene format=3 uid="uid://dbn00u1iuhmo3"]
 
 [ext_resource type="Script" uid="uid://dsay7uo6f2nhb" path="res://script/main.gd" id="1_53pgk"]
+[ext_resource type="Script" path="res://script/add_upgrade.gd" id="2_add"]
+[ext_resource type="Script" path="res://script/multiply_upgrade.gd" id="3_mul"]
 
-[node name="main" type="Node2D" unique_id=1126201804]
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_53pgk")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=199640698]
+[node name="IncomeTimer" type="Timer" parent="."]
+autostart = true
 
-[node name="Button_1" type="Button" parent="." unique_id=326355688]
-offset_left = -543.0
-offset_top = -290.0
-offset_right = -99.0
-offset_bottom = -95.0
-theme_override_font_sizes/font_size = 40
-text = "Get Money"
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
 
-[node name="Button_upgrade" type="Button" parent="." unique_id=837587317]
-offset_left = -530.0
-offset_top = 150.0
-offset_right = -237.0
-offset_bottom = 287.0
-text = "upgrade
-"
+[node name="Columns" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 40
 
-[node name="MoneyLabel" type="Label" parent="." unique_id=874213590]
-offset_left = -543.0
-offset_top = -70.0
-offset_right = -99.0
-offset_bottom = -10.0
-theme_override_font_sizes/font_size = 40
+[node name="Main" type="VBoxContainer" parent="Margin/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+theme_override_constants/separation = 16
+
+[node name="MoneyLabel" type="Label" parent="Margin/Columns/Main"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 56
 text = "Money: $0"
+horizontal_alignment = 1
 
-[connection signal="pressed" from="Button_1" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button_upgrade" to="." method="_on_button_upgrade_pressed"]
+[node name="IncomeLabel" type="Label" parent="Margin/Columns/Main"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Income: $0 per second"
+horizontal_alignment = 1
+
+[node name="ClickButton" type="Button" parent="Margin/Columns/Main"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Click!"
+
+[node name="Shop" type="VBoxContainer" parent="Margin/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="Margin/Columns/Shop"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Upgrades"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="Margin/Columns/Shop"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="List" type="VBoxContainer" parent="Margin/Columns/Shop/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="StrongerClicks" type="Button" parent="Margin/Columns/Shop/Scroll/List"]
+layout_mode = 2
+script = ExtResource("2_add")
+amount = 1
+upgrade_name = "Stronger Clicks"
+affects = 0
+cost = 10
+
+[node name="HireWorker" type="Button" parent="Margin/Columns/Shop/Scroll/List"]
+layout_mode = 2
+script = ExtResource("2_add")
+amount = 2
+upgrade_name = "Hire a Worker"
+affects = 1
+cost = 25
+
+[node name="GoldenTouch" type="Button" parent="Margin/Columns/Shop/Scroll/List"]
+layout_mode = 2
+script = ExtResource("2_add")
+amount = 5
+upgrade_name = "Golden Touch"
+affects = 0
+cost = 150
+
+[node name="DoubleClicks" type="Button" parent="Margin/Columns/Shop/Scroll/List"]
+layout_mode = 2
+script = ExtResource("3_mul")
+multiplier = 2.0
+upgrade_name = "Double Clicks"
+affects = 0
+cost = 300
+
+[node name="Factory" type="Button" parent="Margin/Columns/Shop/Scroll/List"]
+layout_mode = 2
+script = ExtResource("2_add")
+amount = 15
+upgrade_name = "Build a Factory"
+affects = 1
+cost = 500
+
+[node name="Overtime" type="Button" parent="Margin/Columns/Shop/Scroll/List"]
+layout_mode = 2
+script = ExtResource("3_mul")
+multiplier = 2.0
+upgrade_name = "Overtime"
+affects = 1
+cost = 1500
+
+[node name="BoomTimes" type="Button" parent="Margin/Columns/Shop/Scroll/List"]
+layout_mode = 2
+script = ExtResource("3_mul")
+multiplier = 3.0
+upgrade_name = "Boom Times"
+affects = 2
+cost = 10000
+
+[connection signal="timeout" from="IncomeTimer" to="." method="_on_income_timer_timeout"]
+[connection signal="pressed" from="Margin/Columns/Main/ClickButton" to="." method="_on_click_button_pressed"]
