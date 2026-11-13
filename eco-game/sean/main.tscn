@@ -4,3 +4,32 @@
 
 [node name="main" type="Node2D" unique_id=1126201804]
 script = ExtResource("1_53pgk")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=199640698]
+
+[node name="Button_1" type="Button" parent="." unique_id=326355688]
+offset_left = -543.0
+offset_top = -290.0
+offset_right = -99.0
+offset_bottom = -95.0
+theme_override_font_sizes/font_size = 40
+text = "Get Money"
+
+[node name="Button_upgrade" type="Button" parent="." unique_id=837587317]
+offset_left = -530.0
+offset_top = 150.0
+offset_right = -237.0
+offset_bottom = 287.0
+text = "upgrade
+"
+
+[node name="MoneyLabel" type="Label" parent="." unique_id=874213590]
+offset_left = -543.0
+offset_top = -70.0
+offset_right = -99.0
+offset_bottom = -10.0
+theme_override_font_sizes/font_size = 40
+text = "Money: $0"
+
+[connection signal="pressed" from="Button_1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button_upgrade" to="." method="_on_button_upgrade_pressed"]

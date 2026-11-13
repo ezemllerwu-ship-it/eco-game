@@ -1,11 +1,23 @@
 extends Node2D
+var up_grade_cost = 10
+var money = 0
+var add = 1
+@onready var money_label: Label = $MoneyLabel
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	money_label.text = "Money: $" + str(money)
 
-#muppets r cool
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	money_label.text = "Money: $" + str(money)
+
+func _on_button_pressed() -> void:
+	money += add
+
+func _on_button_upgrade_pressed() -> void:
+	if money >= up_grade_cost:
+		money -= up_grade_cost
+		add += 1
+		up_grade_cost *= 1.5
+		
+
+	
