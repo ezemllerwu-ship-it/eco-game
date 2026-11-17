@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Monthly precipitation vs 1900-1929 average (2025 and 1996-2025), by state group" description="">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 1 data" position="(60, 60)" />
+		<node id="1" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 1: ME, NH, VT, MA, RI, CT, NY, PA, NJ, DE, MD" position="(260, 60)" />
+		<node id="2" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 2 data" position="(60, 170)" />
+		<node id="3" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 2: WV, VA, KY, TN, NC" position="(260, 170)" />
+		<node id="4" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 3 data" position="(60, 280)" />
+		<node id="5" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 3: MS, AL, GA, SC, FL" position="(260, 280)" />
+		<node id="6" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 4 data" position="(60, 390)" />
+		<node id="7" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 4: TX, OK, AR, LA" position="(260, 390)" />
+		<node id="8" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 5 data" position="(60, 500)" />
+		<node id="9" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 5: OH, IN, IL, MI, WI" position="(260, 500)" />
+		<node id="10" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 6 data" position="(60, 610)" />
+		<node id="11" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 6: MO, KS, NE, IA" position="(260, 610)" />
+		<node id="12" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 7 data" position="(580, 60)" />
+		<node id="13" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 7: MN, SD, ND" position="(780, 60)" />
+		<node id="14" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 8 data" position="(580, 170)" />
+		<node id="15" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 8: UT, CO, AZ, NM" position="(780, 170)" />
+		<node id="16" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 9 data" position="(580, 280)" />
+		<node id="17" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 9: CA, NV" position="(780, 280)" />
+		<node id="18" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 10 data" position="(580, 390)" />
+		<node id="19" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 10: MT, WY" position="(780, 390)" />
+		<node id="20" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="Group 11 data" position="(580, 500)" />
+		<node id="21" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="Group 11: WA, OR, ID" position="(780, 500)" />
+		<node id="22" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="All groups data" position="(580, 610)" />
+		<node id="23" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="ALL GROUPS: 1996-2025 vs 1900-1929" position="(780, 610)" />
+		<node id="24" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="ALL GROUPS: by year data" position="(60, 720)" />
+		<node id="25" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="ALL GROUPS: by year" position="(260, 720)" />
+		<node id="26" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="ALL GROUPS: by year (10-yr smoothed) data" position="(580, 720)" />
+		<node id="27" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="ALL GROUPS: by year (10-yr smoothed)" position="(780, 720)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="6" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="8" sink_node_id="9" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="10" sink_node_id="11" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="6" source_node_id="12" sink_node_id="13" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="7" source_node_id="14" sink_node_id="15" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="8" source_node_id="16" sink_node_id="17" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="9" source_node_id="18" sink_node_id="19" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="10" source_node_id="20" sink_node_id="21" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="11" source_node_id="22" sink_node_id="23" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="12" source_node_id="24" sink_node_id="25" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="13" source_node_id="26" sink_node_id="27" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAwMS50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMDEudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="1" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 1: ME, NH, VT, MA, RI, CT, NY, PA, NJ, DE, MD', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAwMi50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMDIudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="3" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 2: WV, VA, KY, TN, NC', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="4" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAwMy50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMDMudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="5" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 3: MS, AL, GA, SC, FL', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="6" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAwNC50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMDQudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="7" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 4: TX, OK, AR, LA', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="8" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAwNS50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMDUudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="9" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 5: OH, IN, IL, MI, WI', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="10" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAwNi50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMDYudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="11" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 6: MO, KS, NE, IA', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="12" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAwNy50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMDcudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="13" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 7: MN, SD, ND', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="14" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAwOC50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMDgudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="15" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 8: UT, CO, AZ, NM', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="16" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAwOS50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMDkudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="17" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 9: CA, NV', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="18" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAxMC50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMTAudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="19" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 10: MT, WY', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="20" format="pickle">gASVJQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMNy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvZ3JvdXAxMS50YWKUjAZwcmVmaXiUjAdiYXNlZGly
+lIwHcmVscGF0aJSMC2dyb3VwMTEudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9mb3Jt
+YXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3VybJRo
+EIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="21" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - Group 11: WA, OR, ID', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="22" format="pickle">gASVKwEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMOi9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvYWxsX2dyb3Vwcy50YWKUjAZwcmVmaXiUjAdiYXNl
+ZGlylIwHcmVscGF0aJSMDmFsbF9ncm91cHMudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmls
+ZV9mb3JtYXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSM
+A3VybJRoEIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="23" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - All groups: 1996-2025 average vs 1900-1929 average', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Month'}, '__version__': 1}</properties>
+		<properties node_id="24" format="pickle">gASVOwEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMQi9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvYWxsX2dyb3Vwc19ieV95ZWFyLnRhYpSMBnByZWZp
+eJSMB2Jhc2VkaXKUjAdyZWxwYXRolIwWYWxsX2dyb3Vwc19ieV95ZWFyLnRhYpSMBXRpdGxllGgN
+jAVzaGVldJSMAJSMC2ZpbGVfZm9ybWF0lE51YmGMBnNvdXJjZZRLAIwLcmVjZW50X3VybHOUXZSM
+C3NoZWV0X25hbWVzlH2UjAN1cmyUaBCMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="25" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - All groups: yearly total vs 1900-1929 average', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Year'}, '__version__': 1}</properties>
+		<properties node_id="26" format="pickle">gASVRQEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMRy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfcHJlY2lwX3ZzXzE5MDAvYWxsX2dyb3Vwc19ieV95ZWFyXzEweXIudGFilIwG
+cHJlZml4lIwHYmFzZWRpcpSMB3JlbHBhdGiUjBthbGxfZ3JvdXBzX2J5X3llYXJfMTB5ci50YWKU
+jAV0aXRsZZRoDYwFc2hlZXSUjACUjAtmaWxlX2Zvcm1hdJROdWJhjAZzb3VyY2WUSwCMC3JlY2Vu
+dF91cmxzlF2UjAtzaGVldF9uYW1lc5R9lIwDdXJslGgQjAtfX3ZlcnNpb25fX5RLAXUu
+</properties>
+		<properties node_id="27" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Precipitation - All groups: 10-year average vs 1900-1929 average', ('Annotations', 'y-axis title', 'Title'): 'inches wetter (+) / drier (-) than 1900-1929', ('Annotations', 'x-axis title', 'Title'): 'Year'}, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

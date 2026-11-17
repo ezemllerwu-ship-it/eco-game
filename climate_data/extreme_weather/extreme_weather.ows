@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Extreme weather by state group: drought, wet spells and reported storms" description="">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="EXTREME DROUGHT: by year data" position="(60, 60)" />
+		<node id="1" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="EXTREME DROUGHT: by year" position="(260, 60)" />
+		<node id="2" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="EXTREME DROUGHT: 10-yr smoothed data" position="(60, 170)" />
+		<node id="3" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="EXTREME DROUGHT: 10-yr smoothed" position="(260, 170)" />
+		<node id="4" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="EXTREME WET: by year data" position="(60, 280)" />
+		<node id="5" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="EXTREME WET: by year" position="(260, 280)" />
+		<node id="6" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="EXTREME WET: 10-yr smoothed data" position="(60, 390)" />
+		<node id="7" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="EXTREME WET: 10-yr smoothed" position="(260, 390)" />
+		<node id="8" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="" version="" title="STORM REPORTS: by year data" position="(60, 500)" />
+		<node id="9" name="Line Plot" qualified_name="Orange.widgets.visualize.owlineplot.OWLinePlot" project_name="" version="" title="STORM REPORTS: by year" position="(260, 500)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="6" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="8" sink_node_id="9" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVNgEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMQC9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfZXh0cmVtZV93ZWF0aGVyL2Ryb3VnaHRfYnlfeWVhci50YWKUjAZwcmVmaXiU
+jAdiYXNlZGlylIwHcmVscGF0aJSME2Ryb3VnaHRfYnlfeWVhci50YWKUjAV0aXRsZZRoDYwFc2hl
+ZXSUjACUjAtmaWxlX2Zvcm1hdJROdWJhjAZzb3VyY2WUSwCMC3JlY2VudF91cmxzlF2UjAtzaGVl
+dF9uYW1lc5R9lIwDdXJslGgQjAtfX3ZlcnNpb25fX5RLAXUu
+</properties>
+		<properties node_id="1" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Months in extreme drought per year (Palmer index -4 or lower)', ('Annotations', 'y-axis title', 'Title'): 'Months per year (average per state)', ('Annotations', 'x-axis title', 'Title'): 'Year'}, '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVMAEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMPS9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfZXh0cmVtZV93ZWF0aGVyL2Ryb3VnaHRfMTB5ci50YWKUjAZwcmVmaXiUjAdi
+YXNlZGlylIwHcmVscGF0aJSMEGRyb3VnaHRfMTB5ci50YWKUjAV0aXRsZZRoDYwFc2hlZXSUjACU
+jAtmaWxlX2Zvcm1hdJROdWJhjAZzb3VyY2WUSwCMC3JlY2VudF91cmxzlF2UjAtzaGVldF9uYW1l
+c5R9lIwDdXJslGgQjAtfX3ZlcnNpb25fX5RLAXUu
+</properties>
+		<properties node_id="3" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Months in extreme drought - 10-year average', ('Annotations', 'y-axis title', 'Title'): 'Months per year (average per state)', ('Annotations', 'x-axis title', 'Title'): 'Year'}, '__version__': 1}</properties>
+		<properties node_id="4" format="pickle">gASVLgEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMPC9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfZXh0cmVtZV93ZWF0aGVyL3dldF9ieV95ZWFyLnRhYpSMBnByZWZpeJSMB2Jh
+c2VkaXKUjAdyZWxwYXRolIwPd2V0X2J5X3llYXIudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwL
+ZmlsZV9mb3JtYXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOU
+fZSMA3VybJRoEIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="5" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Months extremely wet per year (Palmer index +4 or higher)', ('Annotations', 'y-axis title', 'Title'): 'Months per year (average per state)', ('Annotations', 'x-axis title', 'Title'): 'Year'}, '__version__': 1}</properties>
+		<properties node_id="6" format="pickle">gASVKAEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMOS9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfZXh0cmVtZV93ZWF0aGVyL3dldF8xMHlyLnRhYpSMBnByZWZpeJSMB2Jhc2Vk
+aXKUjAdyZWxwYXRolIwMd2V0XzEweXIudGFilIwFdGl0bGWUaA2MBXNoZWV0lIwAlIwLZmlsZV9m
+b3JtYXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRfbmFtZXOUfZSMA3Vy
+bJRoEIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="7" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Months extremely wet - 10-year average', ('Annotations', 'y-axis title', 'Title'): 'Months per year (average per state)', ('Annotations', 'x-axis title', 'Title'): 'Year'}, '__version__': 1}</properties>
+		<properties node_id="8" format="pickle">gASVNAEAAAAAAAB9lCiMDHJlY2VudF9wYXRoc5RdlIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVk
+aWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwHYWJzcGF0aJSMPy9Vc2Vycy9lbGxhL0Rvd25s
+b2Fkcy9vcmFuZ2VfZXh0cmVtZV93ZWF0aGVyL3N0b3Jtc19ieV95ZWFyLnRhYpSMBnByZWZpeJSM
+B2Jhc2VkaXKUjAdyZWxwYXRolIwSc3Rvcm1zX2J5X3llYXIudGFilIwFdGl0bGWUaA2MBXNoZWV0
+lIwAlIwLZmlsZV9mb3JtYXSUTnViYYwGc291cmNllEsAjAtyZWNlbnRfdXJsc5RdlIwLc2hlZXRf
+bmFtZXOUfZSMA3VybJRoEIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="9" format="literal">{'show_profiles': False, 'show_range': False, 'show_mean': True, 'show_error': False, 'auto_commit': True, 'visual_settings': {('Annotations', 'Title', 'Title'): 'Reported storm events per year (NOAA Storm Events, all types)', ('Annotations', 'y-axis title', 'Title'): 'Number of reported events (group total)', ('Annotations', 'x-axis title', 'Title'): 'Year'}, '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
